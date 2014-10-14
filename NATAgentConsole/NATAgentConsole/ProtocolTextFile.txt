@@ -1,0 +1,8 @@
+﻿Instruction Setting:
+
+server                                                                              client
+Ins01   RemoteConnection                                   <---------------------   Ins01   RemoteConnection  (Request Remote Port)
+Ins01   RemoteConnection (Send Remote Port and Listen)     --------------------->   Ins01   RemoteConnection  (Get Remote port and Connect to Remote Port)
+
+Ins02   InstructionSend (Send Instruction)                 --------------------->   Ins02   InstructionReceive (Execute Instruction)
+Ins02   InstructionSend (Execute Instruction)              <---------------------   Ins02   InstructionReceive (Send Instruction)

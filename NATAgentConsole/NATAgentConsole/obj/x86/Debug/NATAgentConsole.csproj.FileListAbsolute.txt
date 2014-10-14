@@ -1,0 +1,5 @@
+C:\Users\user\Desktop\103-1 NAT 穿越防火牆\NAT 程式撰寫 version1\NATAgentConsole\NATAgentConsole\bin\Debug\NATAgentConsole.exe
+C:\Users\user\Desktop\103-1 NAT 穿越防火牆\NAT 程式撰寫 version1\NATAgentConsole\NATAgentConsole\bin\Debug\NATAgentConsole.pdb
+C:\Users\user\Desktop\103-1 NAT 穿越防火牆\NAT 程式撰寫 version1\NATAgentConsole\NATAgentConsole\obj\x86\Debug\NATAgentConsole.exe
+C:\Users\user\Desktop\103-1 NAT 穿越防火牆\NAT 程式撰寫 version1\NATAgentConsole\NATAgentConsole\obj\x86\Debug\NATAgentConsole.pdb
+C:\Users\user\Desktop\103-1 NAT 穿越防火牆\NAT 程式撰寫 version1\NATAgentConsole\NATAgentConsole\obj\x86\Debug\NATAgentConsole.csprojResolveAssemblyReference.cache
