@@ -1,0 +1,5 @@
+C:\Users\user\Desktop\103-1 NAT 穿越防火牆\NAT 程式撰寫 version1\NATServerConsole\NATServerConsole\bin\Debug\NATServerConsole.exe
+C:\Users\user\Desktop\103-1 NAT 穿越防火牆\NAT 程式撰寫 version1\NATServerConsole\NATServerConsole\bin\Debug\NATServerConsole.pdb
+C:\Users\user\Desktop\103-1 NAT 穿越防火牆\NAT 程式撰寫 version1\NATServerConsole\NATServerConsole\obj\x86\Debug\NATServerConsole.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\103-1 NAT 穿越防火牆\NAT 程式撰寫 version1\NATServerConsole\NATServerConsole\obj\x86\Debug\NATServerConsole.exe
+C:\Users\user\Desktop\103-1 NAT 穿越防火牆\NAT 程式撰寫 version1\NATServerConsole\NATServerConsole\obj\x86\Debug\NATServerConsole.pdb

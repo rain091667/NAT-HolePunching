@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Net.Sockets;
+using LocalIpDetectLibrary;
 
 namespace NATAgentConsole
 {
@@ -13,6 +14,9 @@ namespace NATAgentConsole
         private static string LocalServerIp;
         private static Thread ClientRemoteThread;
         private static Random Random_PortCreator;
+        private static string Command;
+        private static string Proxy_ServerIp = "219.84.180.175";
+        
         static void Main(string[] args)
         {
             Console.Write("----------------------------------------\n");
@@ -30,6 +34,18 @@ namespace NATAgentConsole
             Console.Write("Wait for client connection...\n");
             Console.Write("----------------------------------------\n");
 
+            /*
+            while (true)
+            {
+                Console.Write("\nAgent Command.>");
+                Command = Console.ReadLine();
+                if (Command == "?")
+                {
+                    Console.Write("\nAgent Command Help:>");
+                    Console.Write("\nlsconnect\t\t列出所有建立連線(包含Clinet與Server端)");
+                }
+            }
+            */
             /*Console.Write("\r\nPress any key to continue....");
             Console.Read();*/
         }
@@ -41,7 +57,7 @@ namespace NATAgentConsole
             TcpListener myTcpListener = new TcpListener(theIPAddress, 15000);
             myTcpListener.Start();
             int dataLength;
-
+            //Socket Client_Socket = myTcpListener.AcceptSocket();
             do
             {
                 Socket Client_Socket = myTcpListener.AcceptSocket();
@@ -57,19 +73,24 @@ namespace NATAgentConsole
                         if (Instructions == "Ins01")
                         {
                             //Client_Socket;
-                            Console.Write(The_messages + "\n");
+                            //Console.Write(The_messages + "\n");
+                            ProxyServerConnection ClientConnections = new ProxyServerConnection(Client_Socket, Proxy_ServerIp);
+                            ClientConnections.StartClientListen();
+
+                            //new Thread(Client_SingleThread).Start(Client_Socket);
+                            Console.Write("Client Connect: " + Client_Socket.RemoteEndPoint.ToString() + "\n");
                         }
                     }
                     catch (Exception e)
                     {
                         //若有連結錯誤則將錯誤訊息顯示出來
-                        myTcpListener.Stop(); //如未連線或其他例外狀況等,關閉tcplistener和socket
+                        //myTcpListener.Stop(); //如未連線或其他例外狀況等,關閉tcplistener和socket
                         Client_Socket.Close();
-                        Console.Write("RemoteListenError! " + e.ToString() + "\n");
-                        Console.Write("\r\nPress any key to continue....");
-                        Console.Read();
-                        Environment.Exit(0);
-                        break;
+                        //Console.Write("RemoteListenError! " + e.ToString() + "\n");
+                        //Console.Write("\r\nPress any key to continue....");
+                        //Console.Read();
+                        //Environment.Exit(0);
+                        //break;
                     }
                 }
             } while (true);

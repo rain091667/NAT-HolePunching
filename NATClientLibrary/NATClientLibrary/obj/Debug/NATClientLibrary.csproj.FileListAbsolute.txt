@@ -2,3 +2,4 @@ C:\Users\user\Desktop\103-1 NAT 穿越防火牆\NAT 程式撰寫 version1\NATCli
 C:\Users\user\Desktop\103-1 NAT 穿越防火牆\NAT 程式撰寫 version1\NATClientLibrary\NATClientLibrary\bin\Debug\NATClientLibrary.pdb
 C:\Users\user\Desktop\103-1 NAT 穿越防火牆\NAT 程式撰寫 version1\NATClientLibrary\NATClientLibrary\obj\Debug\NATClientLibrary.dll
 C:\Users\user\Desktop\103-1 NAT 穿越防火牆\NAT 程式撰寫 version1\NATClientLibrary\NATClientLibrary\obj\Debug\NATClientLibrary.pdb
+C:\Users\user\Desktop\103-1 NAT 穿越防火牆\NAT 程式撰寫 version1\NATClientLibrary\NATClientLibrary\obj\Debug\NATClientLibrary.csprojResolveAssemblyReference.cache
